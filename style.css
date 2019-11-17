@@ -1,0 +1,94 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+
+button{
+  background-color:#fff;
+  border:none;
+  padding: 5px;
+  outline:none;
+  text-transform: uppercase;
+}
+button:hover{
+  cursor: pointer;
+}
+.sticker{
+  width:200px;
+  background-color: rgb(164, 188, 224);
+  overflow:hidden;
+  border-radius: 8px;
+  box-shadow: 6px 6px 5px #aaa;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.sticker .bar{
+  background-color:#eee;
+  position:relative;
+  left: 0;
+  top: 0;
+}
+
+input{
+  resize:none;
+  outline:none;
+  border:none;
+  width:90%;
+  display:block;
+  margin: 10px auto;
+  min-height:30px;
+  font-weight:600;
+  font-size:14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius:5px;
+
+}
+
+.save button{
+  width:80%;
+  display:block;
+  border-radius:3px;
+  background-color:rgb(247, 255, 139);
+  font-size:15px;
+  font-weight: 600;
+  margin: 7px auto;
+}
+.save #enter1 {
+  background-color:rgba(247, 85, 85, 0.938);
+}
+.save button:hover{
+  background-color:yellow;
+}
+#enter1:hover{
+  background-color:rgb(243, 39, 39);
+}
+.bar{
+  height: 24px;
+  cursor: grab;
+}
+.bar button{
+  border-radius:30%;
+  background-color: rgb(250, 181, 181);
+  position:absolute;
+  top:2px;
+  right:7px;
+  font-size:10px;
+  font-weight:700;
+}
+.bar button:hover{
+  background-color:rgb(240, 97, 97);
+  transition: ease 0.1s;
+}
+
+li{
+  font-size: 17px;
+  text-align:center;
+  margin: 6px;
+  font-weight:bold;
+  list-style: circle;
+}
