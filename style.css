@@ -4,7 +4,9 @@
   box-sizing:border-box;
 }
 
-
+body{
+  height:100vh;
+}
 
 button{
   background-color:#fff;
@@ -16,6 +18,23 @@ button{
 button:hover{
   cursor: pointer;
 }
+
+#plus {
+  border-radius: 50%;
+  background-color: rgb(76, 116, 247);
+  width:150px;
+  height:150px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-weight:700;
+  z-index: 1;
+}
+#plus:hover{
+  
+  background-color: rgb(56, 85, 182);
+}
 .sticker{
   width:200px;
   background-color: rgb(164, 188, 224);
@@ -25,6 +44,7 @@ button:hover{
   position: relative;
   top: 0;
   left: 0;
+  display: none;
 }
 
 .sticker .bar{
@@ -58,7 +78,7 @@ input{
   font-weight: 600;
   margin: 7px auto;
 }
-.save #enter1 {
+ #enter1 {
   background-color:rgba(247, 85, 85, 0.938);
 }
 .save button:hover{
@@ -88,7 +108,20 @@ input{
 li{
   font-size: 17px;
   text-align:center;
-  margin: 6px;
+  margin: 25px;
+  padding:5px;
   font-weight:bold;
   list-style: circle;
+  background-color:#fff;
+  border: 1px solid #999;
+  list-style:none;
+}
+
+li .done {
+  background-color:rgb(79, 241, 87);
+  border: 1px solid rgb(27, 177, 72);
+}
+
+.delete {
+  display:none;
 }
